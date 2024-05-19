@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empressão de etiqueta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a
+        href="https://designcolchoes.com.br/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="img/logo-fixa-design.png" alt="" />
+      </a>
+    </header>
+    <div class="container">
+      <h1>Impressão em Impressora Térmica</h1>
+      <label for="numeroIncremento">Número do incremento:</label>
+      <input type="number" id="numeroIncremento" min="1" required />
+      <label for="numeroDuasVias">Quantidade de duas vias:</label>
+      <input type="number" id="numeroDuasVias" min="1" required />
+      <label for="numeroUmaVia">Quantidade de uma vias:</label>
+      <input type="number" id="numeroUmaVia" min="1" required />
+      <button onclick="imprimirEtiqueta()">Imprimir</button>
+      <button onclick="limparEtiqueta()">Limpar</button>
+    </div>
+    <div id="conteudoEtiqueta" style="display: none">
+      <h2>Etiqueta</h2>
+      <p>Conteúdo da etiqueta a ser impresso.</p>
+    </div>
+  </body>
+  <footer>
+    <span
+      >Todos os direitos reservados a
+      <a href="#">
+        <img src="img/Axe²-sem fundo 1.png" alt="" class="logoAxe" />
+      </a>
+    </span>
+  </footer>
+  <!-- <script src="scripts.js"></script> -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</html>
